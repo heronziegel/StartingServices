@@ -19,7 +19,7 @@ class TimerService : Service() {
 
     fun runTimer(){
         Thread {
-            for(i in 20 downTo 0){
+            for(i in num downTo 0){
                 Log.d("Countdown", i.toString())
                 Thread.sleep(1000)
         }
