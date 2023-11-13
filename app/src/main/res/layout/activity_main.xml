@@ -6,13 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/numbersEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="184dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Enter a number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/countdownButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Count Down"
+        app:layout_constraintEnd_toEndOf="@+id/numbersEditText"
+        app:layout_constraintStart_toStartOf="@+id/numbersEditText"
+        app:layout_constraintTop_toBottomOf="@+id/numbersEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
